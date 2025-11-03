@@ -3,7 +3,7 @@ import { Button } from "./ui/button"
 import { ThemeToggle } from "./ui/theme-toggle"
 import { useAuth } from "@/contexts/AuthContext"
 import { useNavigate } from "react-router-dom"
-import logo from "@/assets/images/logo.jpg"
+import logo from "@/assets/images/logo.jpeg"
 
 export function Header() {
   const { logout } = useAuth()
