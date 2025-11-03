@@ -1,22 +1,33 @@
 import { LogOut } from "lucide-react"
 import { Button } from "./ui/button"
 import { ThemeToggle } from "./ui/theme-toggle"
-
 import { useAuth } from "@/contexts/AuthContext"
 import { useNavigate } from "react-router-dom"
+import logo from "@/assets/images/logo.jpeg"
 
 export function Header() {
-
   const { logout } = useAuth()
   const navigate = useNavigate()
+
   const handleLogout = () => {
     logout()
     navigate("/login")
   }
+
   return (
     <header className="fixed top-0 z-50 w-full border-b bg-background/80 backdrop-blur-sm">
       <div className="flex h-16 items-center justify-between px-6">
-        <div className="text-xl font-bold" onClick={navigate("/")}>Home</div>
+        <div 
+          className="flex items-center gap-2 cursor-pointer" 
+          onClick={() => navigate("/")}
+        >
+          <img 
+            src={logo} 
+            alt="iKHULU SQUARES Logo" 
+            className="h-10 w-auto"
+          />
+          <span className="text-xl font-bold">iKHULU SQUARES</span>
+        </div>
         <div className="flex items-center gap-4">
           <ThemeToggle />
           <Button variant="ghost" size="icon" onClick={handleLogout}>
