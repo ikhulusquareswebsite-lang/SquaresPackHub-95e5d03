@@ -3,7 +3,7 @@ import { Button } from "./ui/button"
 import { ThemeToggle } from "./ui/theme-toggle"
 import { useAuth } from "@/contexts/AuthContext"
 import { useNavigate } from "react-router-dom"
-import logo from "@/assets/images/logo.jpeg"
+import { Logo } from "./Logo"
 
 export function Header() {
   const { logout } = useAuth()
@@ -17,16 +17,8 @@ export function Header() {
   return (
     <header className="fixed top-0 z-50 w-full border-b bg-background/80 backdrop-blur-sm">
       <div className="flex h-16 items-center justify-between px-6">
-        <div 
-          className="flex items-center gap-2 cursor-pointer" 
-          onClick={() => navigate("/")}
-        >
-          <img 
-            src={logo} 
-            alt="iKHULU SQUARES Logo" 
-            className="h-10 w-auto"
-          />
-          <span className="text-xl font-bold">iKHULU SQUARES</span>
+        <div className="cursor-pointer" onClick={() => navigate("/")}>
+          <Logo />
         </div>
         <div className="flex items-center gap-4">
           <ThemeToggle />
