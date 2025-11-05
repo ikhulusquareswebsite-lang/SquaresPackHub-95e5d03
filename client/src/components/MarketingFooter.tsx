@@ -39,11 +39,11 @@ export const MarketingFooter: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-gray-300">
                 <Mail className="w-4 h-4 text-[#E91E8C]" />
-                <span>info@ikhulu.co.za</span>
+                <span>sales@ikhulusquares.com</span>
               </li>
               <li className="flex items-center gap-2 text-gray-300">
                 <Phone className="w-4 h-4 text-[#E91E8C]" />
-                <span>+27 123 456 789</span>
+                <span>+27 61 519 1757</span>
               </li>
               <li className="flex items-center gap-2 text-gray-300">
                 <MapPin className="w-4 h-4 text-[#E91E8C]" />
