@@ -20,25 +20,25 @@ export const getProducts = () => {
           {
             _id: '1',
             name: 'PLASTICS',
-            image: '/assets/images/pallet-wrap.jpg',
+            image: '/assets/images/pallet-wrap.png',
             description: 'High-quality plastics for secure wrapping'
           },
           {
             _id: '2',
             name: 'CORRUGATED',
-            image: '/assets/images/cardboard-box.jpg',
+            image: '/assets/images/cardboard-box.png',
             description: 'Durable corrugated cardboard for all your packaging needs'
           },
           {
             _id: '3',
             name: 'TAPE',
-            image: '/assets/images/tape.jpg',
+            image: '/assets/images/tape.png',
             description: 'Strong adhesive packing tape'
           },
           {
             _id: '4',
             name: 'PRINTING',
-            image: '/assets/images/black-bags.jpg',
+            image: '/assets/images/black-bags.png',
             description: 'High quality printing and embroidery'
           }
         ]
