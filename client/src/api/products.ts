@@ -26,19 +26,19 @@ export const getProducts = () => {
           {
             _id: '2',
             name: 'CORRUGATED',
-            image: '/assets/images/cardboard-box.png',
+            image: '/assets/images/cardboard-box.jpg',
             description: 'Durable corrugated cardboard for all your packaging needs'
           },
           {
             _id: '3',
             name: 'TAPE',
-            image: '/assets/images/tape.png',
+            image: '/assets/images/tape.jpg',
             description: 'Strong adhesive packing tape'
           },
           {
             _id: '4',
             name: 'PRINTING',
-            image: '/assets/images/printing.png',
+            image: '/assets/images/printing.jfif',
             description: 'High quality printing and embroidery'
           }
         ]
