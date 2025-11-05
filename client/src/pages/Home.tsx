@@ -224,7 +224,7 @@ export const Home: React.FC = () => {
                   <Mail className="w-6 h-6 flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="font-semibold mb-1">Email</h4>
-                    <p className="text-white/90">info@ikhulu.co.za</p>
+                    <p className="text-white/90">sales@ikhulusquares.com</p>
                   </div>
                 </div>
                 
@@ -232,7 +232,7 @@ export const Home: React.FC = () => {
                   <Phone className="w-6 h-6 flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="font-semibold mb-1">Phone</h4>
-                    <p className="text-white/90">+27 123 456 789</p>
+                    <p className="text-white/90">+27 61 519 1757</p>
                   </div>
                 </div>
                 
@@ -240,7 +240,10 @@ export const Home: React.FC = () => {
                   <MapPin className="w-6 h-6 flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="font-semibold mb-1">Location</h4>
-                    <p className="text-white/90">South Africa</p>
+                    <p className="text-white/90">9 Crete road</p>
+                    <p className="text-white/90">Unit 1 Wetron Industial Park</p>
+                    <p className="text-white/90">Wetton</p>
+                    <p className="text-white/90">7800</p>
                   </div>
                 </div>
               </div>
