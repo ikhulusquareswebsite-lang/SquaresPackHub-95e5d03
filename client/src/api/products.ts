@@ -19,27 +19,27 @@ export const getProducts = () => {
         products: [
           {
             _id: '1',
-            name: 'PALLET WRAP',
-            image: '/images/pallet-wrap.jpg',
-            description: 'High-quality stretch film for secure pallet wrapping'
+            name: 'PLASTICS',
+            image: '/assets/images/pallet-wrap.jpg',
+            description: 'High-quality plastics for secure wrapping'
           },
           {
             _id: '2',
-            name: 'GENERAL CARDBOARD BOXE',
-            image: '/images/cardboard-box.jpg',
-            description: 'Durable cardboard boxes for all your packaging needs'
+            name: 'CORRUGATED',
+            image: '/assets/images/cardboard-box.jpg',
+            description: 'Durable corrugated cardboard for all your packaging needs'
           },
           {
             _id: '3',
             name: 'TAPE',
-            image: '/images/tape.jpg',
+            image: '/assets/images/tape.jpg',
             description: 'Strong adhesive packing tape'
           },
           {
             _id: '4',
-            name: 'BLACK BAGS',
-            image: '/images/black-bags.jpg',
-            description: 'Heavy-duty refuse bags'
+            name: 'PRINTING',
+            image: '/assets/images/black-bags.jpg',
+            description: 'High quality printing and embroidery'
           }
         ]
       });
