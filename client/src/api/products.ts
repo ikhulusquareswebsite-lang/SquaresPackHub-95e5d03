@@ -38,7 +38,7 @@ export const getProducts = () => {
           {
             _id: '4',
             name: 'PRINTING',
-            image: '/assets/images/black-bags.png',
+            image: '/assets/images/printing.png',
             description: 'High quality printing and embroidery'
           }
         ]
