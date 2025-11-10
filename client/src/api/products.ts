@@ -1,12 +1,17 @@
 import api from './api';
 
+// Import your images
+import palletWrapImg from '../assets/images/pallet-wrap.png';
+import cardboardBoxImg from '../assets/images/cardboard-box.jpg';
+import tapeImg from '../assets/images/tape.jpg';
+import printingImg from '../assets/images/printing.jfif';
+
 export interface Product {
   _id: string;
   name: string;
   image: string;
   description?: string;
 }
-
 // Description: Get all products
 // Endpoint: GET /api/products
 // Request: {}
@@ -20,25 +25,25 @@ export const getProducts = () => {
           {
             _id: '1',
             name: 'PLASTICS',
-            image: '/assets/images/pallet-wrap.png',
+            image: palletWrapImg,
             description: 'High-quality plastics for secure wrapping'
           },
           {
             _id: '2',
             name: 'CORRUGATED',
-            image: '/assets/images/cardboard-box.jpg',
+            image: cardboardBoxImg,
             description: 'Durable corrugated cardboard for all your packaging needs'
           },
           {
             _id: '3',
             name: 'TAPE',
-            image: '/assets/images/tape.jpg',
+            image: tapeImg,
             description: 'Strong adhesive packing tape'
           },
           {
             _id: '4',
             name: 'PRINTING',
-            image: '/assets/images/printing.jfif',
+            image: printingImg,
             description: 'High quality printing and embroidery'
           }
         ]
