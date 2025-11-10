@@ -61,10 +61,10 @@ export const Home: React.FC = () => {
   };
 
   const categoryMappings = [
-    { id: 'pallet-wrap', name: 'PALLET WRAP', count: 3 },
-    { id: 'cardboard-box', name: 'GENERAL CARDBOARD BOXE', count: 3 },
+    { id: 'plastics', name: 'PLASTICS', count: 3 },
+    { id: 'corrugated', name: 'CORRUGATED', count: 3 },
     { id: 'tape', name: 'TAPE', count: 3 },
-    { id: 'black-bags', name: 'BLACK BAGS', count: 3 }
+    { id: 'printing', name: 'PRINTING', count: 3 }
   ];
 
   return (
