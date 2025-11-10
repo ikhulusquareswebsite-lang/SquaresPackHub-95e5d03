@@ -3,6 +3,7 @@ import { MarketingHeader } from '@/components/MarketingHeader';
 import { MarketingFooter } from '@/components/MarketingFooter';
 import { SectionWrapper } from '@/components/SectionWrapper';
 import { ProductCard } from '@/components/ProductCard';
+import { ProductCategoryCard } from '@/components/ProductCategoryCard';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -58,6 +59,13 @@ export const Home: React.FC = () => {
       [e.target.name]: e.target.value
     });
   };
+
+  const categoryMappings = [
+    { id: 'pallet-wrap', name: 'PALLET WRAP', count: 3 },
+    { id: 'cardboard-box', name: 'GENERAL CARDBOARD BOXE', count: 3 },
+    { id: 'tape', name: 'TAPE', count: 3 },
+    { id: 'black-bags', name: 'BLACK BAGS', count: 3 }
+  ];
 
   return (
     <div className="min-h-screen bg-white">
@@ -124,16 +132,17 @@ export const Home: React.FC = () => {
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 animate-in fade-in duration-700 delay-150">
-            {products.map((product, index) => (
+            {categoryMappings.map((category, index) => (
               <div
-                key={product._id}
+                key={category.id}
                 className="animate-in fade-in slide-in-from-bottom duration-700"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <ProductCard
-                  name={product.name}
-                  image={product.image}
-                  description={product.description}
+                <ProductCategoryCard
+                  categoryId={category.id}
+                  categoryName={category.name}
+                  description={`Browse our selection of ${category.name.toLowerCase()}`}
+                  productCount={category.count}
                 />
               </div>
             ))}

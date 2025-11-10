@@ -1,6 +1,11 @@
 import React from 'react';
 
-export const Logo: React.FC<{ className?: string }> = ({ className = '' }) => {
+interface LogoProps {
+  className?: string;
+  onClick?: () => void;
+}
+
+export const Logo: React.FC<LogoProps> = ({ className = '', onClick }) => {
   // Create a 10x10 grid pattern
   // Black squares on the left, magenta/pink on the right
   const createSquares = () => {
@@ -24,7 +29,7 @@ export const Logo: React.FC<{ className?: string }> = ({ className = '' }) => {
   };
 
   return (
-    <div className={`flex items-center gap-3 ${className}`}>
+    <div className={`flex items-center gap-3 ${className}`} onClick={onClick}>
       {/* Diamond logo with 10x10 grid */}
       <div className="relative w-16 h-16 transform rotate-45">
         <div className="absolute inset-0 grid grid-cols-10 grid-rows-10 gap-[2px] bg-white p-[2px]">

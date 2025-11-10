@@ -5,6 +5,7 @@ import { AuthProvider } from "./contexts/AuthContext"
 import { Login } from "./pages/Login"
 import { Register } from "./pages/Register"
 import { Home } from "./pages/Home"
+import { ProductCategoryPage } from "./pages/ProductCategory"
 import { BlankPage } from "./pages/BlankPage"
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/products/:categoryId" element={<ProductCategoryPage />} />
           <Route path="*" element={<BlankPage />} />
         </Routes>
       </Router>

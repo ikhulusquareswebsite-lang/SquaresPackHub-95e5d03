@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Logo } from './Logo';
 import { Menu, X } from 'lucide-react';
 import { Button } from './ui/button';
+import { useNavigate } from 'react-router-dom';
 
 export const MarketingHeader: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,7 +48,7 @@ export const MarketingHeader: React.FC = () => {
     >
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="flex items-center justify-between h-20 md:h-24">
-          <Logo className="cursor-pointer" />
+          <Logo className="cursor-pointer" onClick={() => navigate('/')} />
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
