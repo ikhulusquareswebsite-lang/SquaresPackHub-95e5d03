@@ -10,6 +10,10 @@ import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/useToast';
 import { getProducts, Product } from '@/api/products';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import plasticsImg from '@/assets/images/pallet-wrap.png';
+import corrugatedImg from '@/assets/images/cardboard-box.jpg';
+import tapeImg from '@/assets/images/tape.jpg';
+import printingImg from '@/assets/images/printing.jfif';
 
 export const Home: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
@@ -61,10 +65,34 @@ export const Home: React.FC = () => {
   };
 
   const categoryMappings = [
-    { id: 'plastics', name: 'PLASTICS', count: 3 },
-    { id: 'corrugated', name: 'CORRUGATED', count: 3 },
-    { id: 'tape', name: 'TAPE', count: 3 },
-    { id: 'printing', name: 'PRINTING', count: 3 }
+    { 
+      id: 'plastics', 
+      name: 'PLASTICS', 
+      count: 3,
+      image: '/images/pallet-wrap.png',
+      description: 'High-quality plastics for secure wrapping'
+    },
+    { 
+      id: 'corrugated', 
+      name: 'CORRUGATED', 
+      count: 3,
+      image: '/images/cardboard-box.jpg',
+      description: 'Durable corrugated cardboard for all your packaging needs'
+    },
+    { 
+      id: 'tape', 
+      name: 'TAPE', 
+      count: 3,
+      image: '/images/tape.jpg',
+      description: 'Strong adhesive packing tape'
+    },
+    { 
+      id: 'printing', 
+      name: 'PRINTING', 
+      count: 3,
+      image: '/images/printing.jfif',
+      description: 'High quality printing and embroidery'
+    }
   ];
 
   return (
@@ -141,8 +169,9 @@ export const Home: React.FC = () => {
                 <ProductCategoryCard
                   categoryId={category.id}
                   categoryName={category.name}
-                  description={`Browse our selection of ${category.name.toLowerCase()}`}
+                  description={category.description}
                   productCount={category.count}
+                  image={category.image}
                 />
               </div>
             ))}
