@@ -16,7 +16,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ name, image, descripti
             src={image} 
             alt={name}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            />
+          />
         </div>
         <h3 className="text-lg font-bold text-black uppercase text-center mb-2">
           {name}
