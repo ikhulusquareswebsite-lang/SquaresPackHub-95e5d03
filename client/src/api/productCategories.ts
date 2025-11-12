@@ -1,5 +1,5 @@
 import api from './api';
-import stretchfilmImg from '@/assets/images/stretchrefill.png';
+import stretchfilmImg from '@/assets/images/stretchfilm.png';
 import palletwraphandrollImg from '@/assets/images/palletwraphandroll.png';
 import palletwrapextendedcoreImg from '@/assets/images/palletwrapextendedcore.jpg';
 import palletwrapmachinerollImg from '@/assets/images/palletwrapmachineroll.jpeg';
