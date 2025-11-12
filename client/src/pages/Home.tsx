@@ -68,29 +68,29 @@ export const Home: React.FC = () => {
     { 
       id: 'plastics', 
       name: 'PLASTICS', 
-      count: 3,
-      image: '/images/pallet-wrap.png',
+      count: 7,
+      image: plasticsImg,
       description: 'High-quality plastics for secure wrapping'
     },
     { 
       id: 'corrugated', 
       name: 'CORRUGATED', 
-      count: 3,
-      image: '/images/cardboard-box.jpg',
+      count: 1,
+      image: corrugatedImg,
       description: 'Durable corrugated cardboard for all your packaging needs'
     },
     { 
       id: 'tape', 
       name: 'TAPE', 
-      count: 3,
-      image: '/images/tape.jpg',
+      count: 5,
+      image: tapeImg,
       description: 'Strong adhesive packing tape'
     },
     { 
       id: 'printing', 
       name: 'PRINTING', 
-      count: 3,
-      image: '/images/printing.jfif',
+      count: 5,
+      image: printingImg,
       description: 'High quality printing and embroidery'
     }
   ];
