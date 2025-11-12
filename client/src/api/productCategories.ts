@@ -300,7 +300,7 @@ export const getProductsByCategory = (categoryId: string) => {
       };
       const resolvedId = aliasMap[categoryId] || categoryId;
 
-      resolve({ category: categories[categoryId] || categories['plastics'] });
+      resolve({ category: categories[resolvedId] || categories['plastics'] });
     }, 500);
   });
   // Uncomment the below lines to make an actual API call
