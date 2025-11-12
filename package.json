@@ -22,7 +22,8 @@
   "description": "",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
-    "concurrently": "^9.1.0"
+    "concurrently": "^9.1.0",
+    "emailjs-com": "^3.2.0"
   },
   "devDependencies": {
     "cross-env": "^7.0.3"
