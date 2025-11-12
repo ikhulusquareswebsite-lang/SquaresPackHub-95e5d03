@@ -137,7 +137,15 @@ export const ProductCategoryPage: React.FC = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                   {/* Product Image */}
                   <div className="flex items-center justify-center bg-gray-50 rounded-lg p-8 h-64">
-                    <Package className="w-32 h-32 text-gray-300" />
+                    {product.image ? (
+                      <img 
+                        src={product.image} 
+                        alt={product.name}
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    ) : (
+                      <Package className="w-32 h-32 text-gray-300" />
+                    )}
                   </div>
 
                   {/* Product Details */}
