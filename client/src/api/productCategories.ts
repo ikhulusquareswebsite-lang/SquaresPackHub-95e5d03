@@ -211,7 +211,7 @@ export const getProductsByCategory = (categoryId: string) => {
             {
               _id: 'cb-1',
               name: 'Corruboard',
-              image: '/images/corruboard.png',
+              image: corruboardImg,
               description: 'Standard single wall corrugated boxes',
               variants: [
                 { _id: 'cb-1-v1', size: '36"(910mm)', description: '36 inch width' },
