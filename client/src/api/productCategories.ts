@@ -6,6 +6,7 @@ import palletwrapmachinerollImg from '@/assets/images/palletwrapmachineroll.jpeg
 import skinpackagingImg from '@/assets/images/skinpackaging.png';
 import blackpalletwrapImg from '@/assets/images/blackpalletwrap.png';
 import bubblewrapImg from '@/assets/images/bubblewrap.png';
+import corruboardImg from '@/assets/images/corruboard.png';
 
 export interface ProductVariant {
   _id: string;
@@ -193,40 +194,20 @@ export const getProductsByCategory = (categoryId: string) => {
         },
         'cardboard-box': {
           _id: 'cardboard-box',
-          categoryName: 'GENERAL CARDBOARD BOXE',
+          categoryName: 'Corrugated',
           categoryImage: '/images/cardboard-box.jpg',
           description: 'Durable and versatile cardboard boxes for all packaging needs',
           products: [
             {
               _id: 'cb-1',
-              name: 'Single Wall Boxes',
-              image: '/images/cardboard-box.jpg',
+              name: 'Corruboard',
+              image: '/images/corruboard.png',
               description: 'Standard single wall corrugated boxes',
               variants: [
-                { _id: 'cb-1-v1', size: '200x150x100mm', description: 'Small box' },
-                { _id: 'cb-1-v2', size: '300x200x150mm', description: 'Medium box' },
-                { _id: 'cb-1-v3', size: '400x300x200mm', description: 'Large box' },
-              ]
-            },
-            {
-              _id: 'cb-2',
-              name: 'Double Wall Boxes',
-              image: '/images/cardboard-box.jpg',
-              description: 'Extra strong double wall corrugated boxes',
-              variants: [
-                { _id: 'cb-2-v1', size: '200x150x100mm', description: 'Small box' },
-                { _id: 'cb-2-v2', size: '300x200x150mm', description: 'Medium box' },
-                { _id: 'cb-2-v3', size: '400x300x200mm', description: 'Large box' },
-              ]
-            },
-            {
-              _id: 'cb-3',
-              name: 'Custom Printed Boxes',
-              image: '/images/cardboard-box.jpg',
-              description: 'Branded cardboard boxes with custom printing',
-              variants: [
-                { _id: 'cb-3-v1', size: 'Custom', description: 'Full color printing' },
-                { _id: 'cb-3-v2', size: 'Custom', description: 'Single color printing' },
+                { _id: 'cb-1-v1', size: '36"(910mm)', description: '36 inch width' },
+                { _id: 'cb-1-v2', size: '48"(1220mm)', description: '48 inch width' },
+                { _id: 'cb-1-v3', size: '60"(1520mm)', description: '60 inch width' },
+                { _id: 'cb-1-v4', size: '72"(1820mm)', description: '72 inch width' },
               ]
             },
           ]
