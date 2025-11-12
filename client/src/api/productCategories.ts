@@ -315,9 +315,9 @@ export const getProductsByCategory = (categoryId: string) => {
     }, 500);
   });
   // Uncomment the below lines to make an actual API call
-   try {
+  /* try {
      return await api.get(`/api/products/category/${categoryId}`);
    } catch (error) {
      throw new Error(error?.response?.data?.error || error.message);
-   }
+   } */
 };
