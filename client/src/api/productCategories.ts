@@ -12,6 +12,11 @@ import bufftapeImg from '@/assets/images/bufftape.png';
 import machinerollsImg from '@/assets/images/machinerolls.png';
 import maskingtapeImg from '@/assets/images/maskingtape.png';
 import customprintedtapeImg from '@/assets/images/customprintedtape.png';
+import lithoprintingImg from '@/assets/images/Lithoprinting.jpeg';
+import hotpressmediaImg from '@/assets/images/hotpressmedia.jpeg';
+import embroideryImg from '@/assets/images/embroidery.jpeg';
+import digitalprintingImg from '@/assets/images/digitalprinting.jpeg';
+import largeformatprintingImg from '@/assets/images/largeformatprinting.jpeg';
 
 export interface ProductVariant {
   _id: string;
@@ -282,41 +287,55 @@ export const getProductsByCategory = (categoryId: string) => {
             },
           ]
         },
-        'black-bags': {
-          _id: 'black-bags',
-          categoryName: 'BLACK BAGS',
-          categoryImage: '/images/black-bags.jpg',
-          description: 'Heavy-duty refuse bags for waste management',
+        'printing': {
+          _id: 'printing',
+          categoryName: 'PRINTING',
+          categoryImage: lithoprintingImg,
+          description: 'Professional printing services for all your branding and marketing needs',
           products: [
             {
-              _id: 'bb-1',
-              name: 'Standard Refuse Bags',
-              image: '/images/black-bags.jpg',
-              description: 'Standard black refuse bags for general waste',
+              _id: 'pr-1',
+              name: 'Litho Printing',
+              image: lithoprintingImg,
+              description: 'A traditional printing method that uses metal plates and ink to produce high-quality, consistent prints, ideal for large-volume runs.',
               variants: [
-                { _id: 'bb-1-v1', capacity: '30L', description: 'Small bags' },
-                { _id: 'bb-1-v2', capacity: '60L', description: 'Medium bags' },
-                { _id: 'bb-1-v3', capacity: '100L', description: 'Large bags' },
+                { _id: 'pr-1-v1', size: 'Custom', description: 'Contact for custom specifications' },
               ]
             },
             {
-              _id: 'bb-2',
-              name: 'Heavy Duty Refuse Bags',
-              image: '/images/black-bags.jpg',
-              description: 'Extra strong refuse bags for heavy waste',
+              _id: 'pr-2',
+              name: 'Hotpress Media',
+              image: hotpressmediaImg,
+              description: 'A heat-transfer process that uses pressure and temperature to fuse printed designs onto materials like fabric, metal, or ceramics',
               variants: [
-                { _id: 'bb-2-v1', capacity: '60L', description: 'Medium heavy duty' },
-                { _id: 'bb-2-v2', capacity: '100L', description: 'Large heavy duty' },
+                { _id: 'pr-2-v1', size: 'Custom', description: 'Contact for custom specifications' },
               ]
             },
             {
-              _id: 'bb-3',
-              name: 'Biodegradable Bags',
-              image: '/images/black-bags.jpg',
-              description: 'Eco-friendly biodegradable refuse bags',
+              _id: 'pr-3',
+              name: 'Embroidery',
+              image: embroideryImg,
+              description: 'A decorative technique that stitches thread directly onto fabric to create textured and durable designs.',
               variants: [
-                { _id: 'bb-3-v1', capacity: '30L', description: 'Small eco bags' },
-                { _id: 'bb-3-v2', capacity: '60L', description: 'Medium eco bags' },
+                { _id: 'pr-3-v1', size: 'Custom', description: 'Contact for custom specifications' },
+              ]
+            },
+            {
+              _id: 'pr-4',
+              name: 'Digital Printing',
+              image: digitalprintingImg,
+              description: 'A modern printing method that transfers digital images directly onto materials fast, high-resolution, and cost effective short runs',
+              variants: [
+                { _id: 'pr-4-v1', size: 'Custom', description: 'Contact for custom specifications' },
+              ]
+            },
+            {
+              _id: 'pr-5',
+              name: 'Large Format Printing',
+              image: largeformatprintingImg,
+              description: 'A printing technique used to produce oversized graphics like banners, posters, and signage with vivid, detailed output.',
+              variants: [
+                { _id: 'pr-5-v1', size: 'Custom', description: 'Contact for custom specifications' },
               ]
             },
           ]
