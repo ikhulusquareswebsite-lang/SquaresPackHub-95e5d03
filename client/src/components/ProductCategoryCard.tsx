@@ -22,7 +22,7 @@ export const ProductCategoryCard: React.FC<ProductCategoryCardProps> = ({
 
   return (
     <Card
-      onClick={() => navigate('/products/${categoryId}')}
+      onClick={() => navigate(`/products/${categoryId}`)}
       className="group cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1 bg-white border-gray-200 overflow-hidden"
     >
       <CardContent className="p-6 flex flex-col h-full">
