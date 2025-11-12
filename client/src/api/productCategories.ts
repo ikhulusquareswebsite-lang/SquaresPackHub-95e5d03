@@ -7,6 +7,11 @@ import skinpackagingImg from '@/assets/images/skinpackaging.png';
 import blackpalletwrapImg from '@/assets/images/blackpalletwrap.png';
 import bubblewrapImg from '@/assets/images/bubblewrap.png';
 import corruboardImg from '@/assets/images/corruboard.png';
+import cleartapeImg from '@/assets/images/cleartape.png';
+import bufftapeImg from '@/assets/images/bufftape.png';
+import machinerollsImg from '@/assets/images/machinerolls.png';
+import maskingtapeImg from '@/assets/images/maskingtape.png';
+import customprintedtapeImg from '@/assets/images/customprintedtape.png';
 
 export interface ProductVariant {
   _id: string;
@@ -220,33 +225,59 @@ export const getProductsByCategory = (categoryId: string) => {
           products: [
             {
               _id: 't-1',
-              name: 'Brown Packing Tape',
-              image: '/images/tape.jpg',
-              description: 'Standard brown packing tape for general use',
+              name: 'Clear Tape',
+              image: cleartapeImg,
+              description: 'Clear hotmelt adhesive tape used for the closing of boxes for general packaging purposes',
               variants: [
-                { _id: 't-1-v1', size: '48mm x 50m', description: 'Standard roll' },
-                { _id: 't-1-v2', size: '48mm x 100m', description: 'Extended length' },
-                { _id: 't-1-v3', size: '72mm x 50m', description: 'Wide roll' },
+                { _id: 't-1-v1', size: '48x50 H/M PP31', description: '36/Case' },
+                { _id: 't-1-v2', size: '48x100 H/M PP31', description: '36/Case' },
               ]
             },
             {
               _id: 't-2',
-              name: 'Clear Packing Tape',
-              image: '/images/tape.jpg',
-              description: 'Transparent packing tape for professional appearance',
+              name: 'Buff Tape',
+              image: bufftapeImg,
+              description: 'Buff tape - Hotmelt adhesive tape used for the closing of boxes for general packaging purposes.',
               variants: [
-                { _id: 't-2-v1', size: '48mm x 50m', description: 'Standard roll' },
-                { _id: 't-2-v2', size: '48mm x 100m', description: 'Extended length' },
+                { _id: 't-2-v1', size: '48x50 H/M PP31', description: '36/Case' },
+                { _id: 't-2-v2', size: '48x100 H/M PP31', description: '36/Case' },
               ]
             },
             {
               _id: 't-3',
-              name: 'Heavy Duty Tape',
-              image: '/images/tape.jpg',
-              description: 'Extra strong tape for heavy packages',
+              name: 'Machine Rolls',
+              image: machinerollsImg,
+              description: 'Heavy Duty Machine rolls for automated packaging lines. Extra Strength Tape for consistent packaging solutions.',
               variants: [
-                { _id: 't-3-v1', size: '48mm x 50m', thickness: 'Extra thick', description: 'Heavy duty' },
-                { _id: 't-3-v2', size: '72mm x 50m', thickness: 'Extra thick', description: 'Wide heavy duty' },
+                { _id: 't-3-v1', size: '48mm x 1000mm', description: '6/Case' },
+                { _id: 't-3-v2', size: '72mm x 1000mm', description: '4/Case' },
+              ]
+            },
+            {
+              _id: 't-4',
+              name: 'Masking Tape',
+              image: maskingtapeImg,
+              description: 'Utility 60 Degree & 80 Degree high temp applications. Ideal for paint masking or surface protection.',
+              variants: [
+                { _id: 't-4-v1', size: '12mm x 40m 60Deg', description: '72/Case' },
+                { _id: 't-4-v2', size: '12mm x 40m 80Deg', description: '72/Case' },
+                { _id: 't-4-v3', size: '18mm x 40m 60Deg', description: '48/Case' },
+                { _id: 't-4-v4', size: '18mm x 40m 80Deg', description: '48/Case' },
+                { _id: 't-4-v5', size: '24mm x 40m 60Deg', description: '36/Case' },
+                { _id: 't-4-v6', size: '24mm x 40m 80Deg', description: '36/Case' },
+                { _id: 't-4-v7', size: '36mm x 40m 60Deg', description: '24/Case' },
+                { _id: 't-4-v8', size: '36mm x 40m 80Deg', description: '24/Case' },
+                { _id: 't-4-v9', size: '48mm x 40m 60Deg', description: '24/Case' },
+                { _id: 't-4-v10', size: '48mm x 40m 80Deg', description: '24/Case' },
+              ]
+            },
+            {
+              _id: 't-5',
+              name: 'Customized Printed Tape',
+              image: customprintedtapeImg,
+              description: 'Great quality and performance printed packaging tapes in both Hotmelt Premium and water-based Acrylic Econo Grade.',
+              variants: [
+                { _id: 't-5-v1', size: 'Custom', description: 'Contact for custom printing options' },
               ]
             },
           ]
