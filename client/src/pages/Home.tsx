@@ -64,8 +64,8 @@ export const Home: React.FC = () => {
         'service_mnifvdh',
         'template_el42dir',
         {
-          from_name: formData.name,
-          from_email: formData.email,
+          name: formData.name,
+          email: formData.email,
           message: formData.message,
         }
       );
