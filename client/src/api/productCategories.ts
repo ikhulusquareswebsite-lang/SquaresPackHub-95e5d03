@@ -12,7 +12,7 @@ import bufftapeImg from '@/assets/images/bufftape.png';
 import machinerollsImg from '@/assets/images/machinerolls.png';
 import maskingtapeImg from '@/assets/images/maskingtape.png';
 import customprintedtapeImg from '@/assets/images/customprintedtape.png';
-import lithoprintingImg from '@/assets/images/Lithoprinting.jpeg';
+import lithoprintingImg from '@/assets/images/lithoprinting.jpeg';
 import hotpressmediaImg from '@/assets/images/hotpressmedia.jpeg';
 import embroideryImg from '@/assets/images/embroidery.jpeg';
 import digitalprintingImg from '@/assets/images/digitalprinting.jpeg';
