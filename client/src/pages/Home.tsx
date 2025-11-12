@@ -10,6 +10,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/useToast';
 import { getProducts, Product } from '@/api/products';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 import plasticsImg from '@/assets/images/pallet-wrap.png';
 import corrugatedImg from '@/assets/images/cardboard-box.jpg';
 import tapeImg from '@/assets/images/tape.jpg';
@@ -18,12 +19,18 @@ import printingImg from '@/assets/images/printing.jfif';
 export const Home: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
+  const [sending, setSending] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
   });
   const { toast } = useToast();
+
+  // Initialize EmailJS
+  useEffect(() => {
+    emailjs.init('pQRVWWjiPbsLmCve2');
+  }, []);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -47,14 +54,39 @@ export const Home: React.FC = () => {
     fetchProducts();
   }, [toast]);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Contact form submitted:', formData);
-    toast({
-      title: 'Message Sent!',
-      description: 'Thank you for contacting us. We will get back to you soon.',
-    });
-    setFormData({ name: '', email: '', message: '' });
+    setSending(true);
+
+    try {
+      // Send email using EmailJS
+      await emailjs.send(
+        'service_mnifvdh',
+        'template_el42dir',
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+        }
+      );
+
+      toast({
+        title: 'Message Sent!',
+        description: 'Thank you for contacting us. We will get back to you soon.',
+      });
+      
+      // Reset form
+      setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+      toast({
+        title: 'Error',
+        description: 'Failed to send message. Please try again later.',
+        variant: 'destructive',
+      });
+    } finally {
+      setSending(false);
+    }
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -240,10 +272,11 @@ export const Home: React.FC = () => {
                 
                 <Button
                   type="submit"
-                  className="w-full bg-[#E91E8C] hover:bg-[#E41E3F] text-white py-6 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg flex items-center justify-center gap-2"
+                  disabled={sending}
+                  className="w-full bg-[#E91E8C] hover:bg-[#E41E3F] text-white py-6 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <Send className="w-5 h-5" />
-                  Send Message
+                  {sending ? 'Sending...' : 'Send Message'}
                 </Button>
               </form>
             </div>
