@@ -170,7 +170,7 @@ export const Home: React.FC = () => {
             About us
           </h2>
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed animate-in fade-in slide-in-from-left duration-700 delay-150">
-            iKHULU SQUARES are a supplier of packaging solutions in South Africa. We stock and supply stocks wide variety packaging materials including many.
+            iKHULU SQUARES is a supplier of packaging and printing products and solutions countrywide. We stock a wide variety packaging and print products tailored to suit diverse industries.
           </p>
         </div>
       </SectionWrapper>
