@@ -344,7 +344,7 @@ export const getProductsByCategory = (categoryId: string) => {
 
       // Add alias support for friendly category URLs
       const aliasMap: Record<string, string> = {
-        corrugated: 'cardboard-box',
+        corruboard: 'cardboard-box',
         plastic: 'plastics', // optional - in case you ever use singular/plural mismatch
       };
       const resolvedId = aliasMap[categoryId] || categoryId;
