@@ -15,6 +15,7 @@ import plasticsImg from '@/assets/images/pallet-wrap.png';
 import corrugatedImg from '@/assets/images/cardboard-box.jpg';
 import tapeImg from '@/assets/images/tape.jpg';
 import printingImg from '@/assets/images/printing.jfif';
+import corruboardImg from '@/assets/images/corruboard.png';
 
 export const Home: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
@@ -105,11 +106,11 @@ export const Home: React.FC = () => {
       description: 'High-quality plastics for secure wrapping'
     },
     { 
-      id: 'corrugated', 
-      name: 'CORRUGATED', 
+      id: 'corruboard', 
+      name: 'CORRUBOARD', 
       count: 1,
-      image: corrugatedImg,
-      description: 'Durable corrugated cardboard for all your packaging needs'
+      image: corruboardImg,
+      description: 'Durable corruboard for all your packaging needs'
     },
     { 
       id: 'tape', 
@@ -143,7 +144,7 @@ export const Home: React.FC = () => {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 mb-8 animate-in fade-in slide-in-from-bottom duration-700 delay-150">
-              Your trusted supplier of packaging solutions in South Africa
+              Your trusted supplier of print and packaging solutions in South Africa
             </p>
             <Button
               onClick={() => {
