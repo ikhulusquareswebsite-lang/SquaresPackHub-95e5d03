@@ -204,7 +204,7 @@ export const getProductsByCategory = (categoryId: string) => {
         },
         'cardboard-box': {
           _id: 'cardboard-box',
-          categoryName: 'Corrugated',
+          categoryName: 'Corruboard',
           categoryImage: '/images/cardboard-box.jpg',
           description: 'Durable and versatile cardboard boxes for all packaging needs',
           products: [
