@@ -210,7 +210,7 @@ export const getProductsByCategory = (categoryId: string) => {
           products: [
             {
               _id: 'cb-1',
-              name: 'Corruboard',
+              name: 'Corruboard(SFK)',
               image: corruboardImg,
               description: 'Standard single wall corrugated boxes',
               variants: [
