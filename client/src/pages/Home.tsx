@@ -304,7 +304,7 @@ export const Home: React.FC = () => {
                   <Phone className="w-6 h-6 flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="font-semibold mb-1">Phone</h4>
-                    <p className="text-white/90">+27 61 519 1757</p>
+                    <p className="text-white/90">+27 82 567 0691</p>
                   </div>
                 </div>
                 
