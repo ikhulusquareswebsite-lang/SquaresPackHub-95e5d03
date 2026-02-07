@@ -43,7 +43,7 @@ export const MarketingFooter: React.FC = () => {
               </li>
               <li className="flex items-center gap-2 text-gray-300">
                 <Phone className="w-4 h-4 text-[#E91E8C]" />
-                <span>+27 61 519 1757</span>
+                <span>+27 82 567 0691</span>
               </li>
               <li className="flex items-center gap-2 text-gray-300">
                 <MapPin className="w-4 h-4 text-[#E91E8C]" />
